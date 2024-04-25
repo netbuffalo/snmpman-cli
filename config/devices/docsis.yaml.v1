@@ -1,0 +1,51 @@
+name: "cm"
+modifiers:
+# sysUpTime
+  - oid: ".1.3.6.1.2.1.1.3.0"
+    class: "com.oneandone.snmpman.configuration.modifier.TimeTicksModifier"
+
+# ifInOctets
+  - oid: ".1.3.6.1.2.1.2.2.1.10"
+    class: "com.oneandone.snmpman.configuration.modifier.Counter32Modifier"
+    properties:
+      minimum: 0
+      maximum: 4294967295
+      minimumStep: 1000
+      maximumStep: 5000000
+
+# ifOutOctets
+  - oid: ".1.3.6.1.2.1.2.2.1.16"
+    class: "com.oneandone.snmpman.configuration.modifier.Counter32Modifier"
+    properties:
+      minimum: 0
+      maximum: 4294967295
+      #minimumStep: 0
+      minimumStep: 1000
+      maximumStep: 5000000
+
+# docsIfCmStatusTxPower
+  - oid: ".1.3.6.1.2.1.10.127.1.2.2.1.3"
+    class: "com.oneandone.snmpman.configuration.modifier.Integer32Modifier"
+    properties:
+      minimum: 80
+      maximum: 680
+      minimumStep: -25
+      maximumStep: 25
+
+# docsIfSigQSignalNoise
+  - oid: ".1.3.6.1.2.1.10.127.1.1.4.1.5"
+    class: "com.oneandone.snmpman.configuration.modifier.Integer32Modifier"
+    properties:
+      minimum: 220
+      maximum: 350
+      minimumStep: -25
+      maximumStep: 25
+
+# docsIf3SignalQualityExtRxMER
+  - oid: ".1.3.6.1.4.1.4491.2.1.20.1.24.1.1"
+    class: "com.oneandone.snmpman.configuration.modifier.Integer32Modifier"
+    properties:
+      minimum: 220
+      maximum: 350
+      minimumStep: -25
+      maximumStep: 25

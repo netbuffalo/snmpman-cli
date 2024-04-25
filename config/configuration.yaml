@@ -1,0 +1,20 @@
+- name: "ofdm-cbr1"
+  walk: "config/walk/ofdm-cmts.cbr1-sati.snmpwalk"
+  ip: "10.100.0.123"
+  port: 161
+
+- name: "cm1"
+  walk: "config/walk/ofdm-cm.KCM3100.743AEFC377D4.snmpwalk"
+  ip: "10.188.158.120"
+  port: 161
+
+- name: "cm2"
+  walk: "config/walk/ofdm-cm.PANA951_02.A81374044AAA.snmpwalk"
+  ip: "10.248.4.98"
+  port: 161
+
+- name: "cm3"
+  walk: "config/walk/ofdm-cm.WA-7600.0C08B45A2197.snmpwalk"
+  ip: "10.248.45.218"
+  port: 161
+
